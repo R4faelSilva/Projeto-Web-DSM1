@@ -1,0 +1,134 @@
+html {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-image: url('../IMG/TabelaFundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    position: relative;
+    isolation: isolate;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-size: auto;
+    opacity: 0.7;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: -5vw;
+    margin-left: -.4vw;
+    margin-right: -.4vw;
+}
+
+table { 
+    background-color: rgba(168, 242, 255, 0.958);
+    /* border-collapse: collapse; */
+    margin: 5vw auto;
+}
+
+tr {
+    background-color: rgb(255, 255, 255);
+}
+
+th {
+    font-weight: bolder;
+}
+
+td {
+    /* border-collapse: collapse; */
+    border: 2px solid black;
+    font-size: 17px;
+}
+
+#tituloSimbolo {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+#simbSign th {
+    padding: 7px;
+    background-color: rgb(180, 250, 255);
+}
+
+
+#tabela1 th, #tabela2 th {
+    /* border-collapse: collapse; */
+    border: 2px solid black;
+}
+
+#tituloPaginaTab {
+    background-color: rgb(94, 217, 255);
+    padding: 20px;
+    text-align: center;
+    margin: -0.4vw;
+    box-shadow: 2px 2px 2px black;
+}
+
+.tabela1TD1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#tabela1 {
+    width: 25vw;
+    margin-top: 5vw;
+    box-shadow:3px 3px 20px rgb(0, 86, 156);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#tabela2 {
+    width: 80vw;
+    box-shadow:3px 3px 20px rgb(0, 86, 156);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#tituloTabela {
+    padding: 25px;
+    font-size: 20px;
+}
+
+.tabela2TH2 {
+    padding: 10px;
+    background-color: rgb(180, 250, 255);
+}
+
+
+
+#tabela2 tbody td{
+    padding: 5px;
+    height: 2vw;
+}
+
+#caixatabela1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 5vw;
+    width: 50vw;
+    padding: 25px;
+    background-color: white;
+    box-shadow:3px 3px 20px rgb(0, 86, 156);
+}
+
+#caixatabela1 p {
+    margin-top: 5vw;
+    text-align: justify;
+    width: 20vw;
+    font-size: 17px;
+}
+
+#tituloSimbolo, #tituloTabela {
+    background-color: rgb(106, 219, 253);
+}

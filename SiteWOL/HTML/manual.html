@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/manual.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Automações em Casa e Empresas</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Sistemas para Automações em Casa/Empresa</h1>
+            <img id="imagemheader" src="../imagens/logoWol.png" alt="LogoWol">
+        </div>
+        <a id="menumanual" href="../HTML/index.html" target="_self">Voltar</a>
+    </header>
+    <section>
+        <div id="tituloInicial">
+            <div id="tituloesubtitulo">
+                <h2 id="titulo">Manual de Configurações</h2>
+                <p id="subtitulo">Configurando o WOL</p>
+            </div>
+            <img id="IMGmanual" src="../imagens/imgmanual/IconeMenu 1.png" alt="Manual">
+        </div>
+        <div id="aviso">
+            <h2>Aviso:</h2>
+            <p>Esses são os passos a passos para configurar o WOL, alguns deles podem variar dependendo do modelo da placa mãe ou o aplicativo que será utilizado para ligar o computador de fato, nesse Manual será utilizado a BIOS de uma placa mãe da fabricante ASUS modelo a520 plus II e o aplicativo Wake On Lan da MR-Webb.</p>
+        </div>
+        <hr id="antestitulo"/>
+
+        <div id="titulopassos">
+            <h3>Configurações Gerais:</h3>
+            <p class="manualsubtitulo"> São necessárias para qualquer dispositivo que será acordado.</p>
+        </div>
+
+        <div class="blocopassos">
+            <div id="passo1">
+                <h3>PASSO 1</h3>
+
+                <p>Na bios de sua placa mãe você deve localizar a opção para ativar o Wake On Lan
+                Nessa bios é necessário fazer esse caminho > <strong>"F7" para entrar no Advanced mode, e ir na aba "Advanced"</strong>.</p>
+
+                <img id="imgpasso1" src="../imagens/imgmanual/asus-bios.png" alt="Bios placa mãe">
+            </div>
+
+            <div id="passo2">
+                <h3>PASSO 2</h3> 
+
+                <p>É necessário permitir que o seu adaptador de rede acorde o computador, para isso, deve ir em <strong>Gerenciador de Dispositivos > Localizar seu adaptador > Clicar duas vezes > Gerenciamento de Energia > E marcar a opção "Permitir que este dispositivo acorde o computador"</strong>.</p>
+
+                <img id="imgpasso2" src="../imagens/imgmanual/gerenciador-dispositivo.jpg" alt="Adaptador de rede">
+            </div>
+        </div>
+        <hr/>
+        <div id="Segundotitulopassos">
+            <h3>Configuração de Aplicativo:</h3>
+            <p class="manualsubtitulo">Depende de qual aplicativo mas as informações necessárias para cadastrar a máquina são as mesmas.</p>
+        </div>
+
+        <div class="blocopassos">
+            <div id="passo3">
+                <h3>PASSO 3</h3>
+
+                <p id="paragrafopasso3">Clique em <strong>"+"</strong> e depois em <strong>"Inserir Manualmente"</strong></p>
+
+                <div id="IMGpasso3">
+                    <img id="IMGapp1" src="../imagens/imgmanual/AppWOL1.png" alt="Aplicativo Wake On Lan 1">
+                    <img id="IMGapp2"  src="../imagens/imgmanual/AppWOL2.png" alt="Aplicativo Wake On Lan 2">
+                </div>
+            </div>
+
+            <div id="passo4">
+                <h3>PASSO 4</h3>
+
+                <p id="paragrafopasso4">Adicione as informações do seu computador, sendo elas o IPv4 e o Endereço MAC que é um código formado por dígitos assim > <strong>Exemplo: "AA:BB:CC:DD:EE:FF"</strong></p>.
+
+                <div id="IMGpasso4">
+                    <img id="IMGapp3" src="../imagens/imgmanual/AppWOL3.png" alt="Aplicativo Wake On Lan 2">
+                    <img id="IMGapp4" src="../imagens/imgmanual/AppWOL4.png" alt="Aplicativo Wake On Lan 2">
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div id="ethernet">
+            <h3 id="ethernetTitulo">Onde achar os valores de IPv4 e MAC:</h3>
+
+            <p id="ethernetParagrafo">Basta seguir esse caminho, ambos ficam em Ethernet. <strong>*Esses valores mudam de máquina para máquina*</strong></p>
+            <div id="IMGethernet">
+                <img id="ethernetimagem" src="../imagens/imgmanual/ethernet.png" alt="Como acessar o MAC">
+                <img id="ethernetimagem" src="../imagens/imgmanual/EthernetMAC.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+    <p>22/09/2025</p>
+    <p id="contatofooter">Contato: emaildecontato@gmail.com</p>
+</footer>
+</html>

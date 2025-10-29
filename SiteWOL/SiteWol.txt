@@ -1,0 +1,61 @@
+Wake on Lan
+Uma alternaternativa para ligar seu pc
+
+-O que é o Wake-On-Lan?
+
+ O Wake-on-lan (ou WOL) é um sistema da rede Ethernet que permite um computador conectado em uma rede, utilizando o endereço MAC do dispositivo, possa ligar ou despertar depois de certas configurações, de forma remota por meio de uma mensagem enviada nessa rede denominada de Magic-Packet. Porem, o computador precisa estar conectado a uma fonte de energia para isso (sempre ligado na tomada por exemplo) e estar em uma rede de internet, pois é por meio dela que o pacote será enviado.
+
+-Usabilidade
+
+ Usar o WOL te permite ligar seu Desktop de maneira remota estando fora ou dentro da sua casa/empresa se você estiver ocupado com outra coisa no momento. Falando assim não parece grande coisa, porém usando esse sistema junto a um Desktop Remoto é quando ele de fato se torna útil, te permitindo usar qualquer computador para acessar o seu que contem seus arquivos e programas. Um exemplo disso, imagine que em uma faculdade de tecnologia você ja tem um investimento em um desktop em casa, porem é mais prático ter um notebook para isso, ai que entra o WOL para ligar seu pc fora de casa e o Software de Desktop Remoto, que te permite acessar seu computador fora de casa.
+
+-Como configurar?
+ 
+ A primeira coisa e a mais importante para configurar seu WOL é certificar-se que você possuí a opção de ativação do Wake-On-Lan na BIOS da sua placa mãe, vale ressaltar que nem todas elas possuem esse recurso, após esse passo é crucial que o computador/servidor esteja ligado a uma rede, pois é lá que será enviado o Magic-Packet, e por fim você precisa permitir no Gerenciados de Dispositivos que o adaptador de rede tenha a permissão para acordar o desktop. Depois de configurar o dispositivo basta usar algum software que usará o Endereço MAC e o Ip para enviar o pacote magico, existem diversas opções de aplicativos de celular na Playstore e algumas soluções de Desktop Remoto também fornecem essa função. Leia o Manual de Configuração do nosso site para mais detalhes sobre essas configurações.
+
+
+É possível ligar fora de casa?
+
+ É possível porém com algumas ressalvas, para o WOL enviar o Magic-Packet para o Desktop, usando um celular de exemplo, ambos devem estar na mesma rede, isso acaba sendo um problema bem complicado, porque da sim para configurar o WOL só precisa de um outro dispositivo que fique ligado 24Hrs para enviar o Packet na rede que o computador está conectado, como um servidor ou seu moldem de wifi, só que para funcionar com o moldem ele precisa ter algumas opções específicas como  IP-MAC Binding, e o servior consome muita energia para alguem que usará esse recurso de maneira doméstica apenas.
+
+-Como acessar o computador fora de casa?
+ Para isso é utilizado softwares de acesso remoto, como por exemplo Parsec, TemaViewer, Google Remote Desktop, entre outros. Existem diversos desses aplicativos, onde basicamente abos os dispositivos devem ter eles istalados e tem que estarem aberto ou funcionando em segundo plano, eles possuem sempre um codigo e uma senha de acesso que sera fornecida para quem está tentando entrar, e esse codigo é obtido pelo software do Desktop que será acessado. Alguns desses aplicativos tem algumas configurações para titrar essas permissões, o que é util se só vc planeja conectar em seu próprio computador. Mas só se for VOCÊ, se for algum tecnico ou qualquer outra pessoa nunca desative essas opções que adiciona pedidos de perissões para acessar seu dispositivo.
+
+-Significado de MAC e IP-MAC biding
+
+-Endereço MAC: O MAC ou Media Acess Control adress, é um número de série de 48 bits que serve para identificar aquele dispositivo de rede Ethernet ou Wi-Fi globalmente. É o endereço base de todos os dispositivos de rede, sendo que existe apenas um para cada paca produzida. Quando pacotes são enviados ou recebidos, os dispositivos fazem uma comparação entre o endereço de destino e o próprio adaptador, se forem os mesmos, o pacote é processado. Quando diferem, a informação é descartada. As conexões funcionam com dois protocolos, o endereço IP e o MAC. O endereço IP é de uma camada acima da Ethernet, sendo a primeira opção para envio de pacotes. Se o destino não está no mesma rede IP do remetente, é necessário enviar para o roteador configurado. A Ethernet utiliza os endereços MAC para esses envios. (Fonte https://tecnoblog.net/responde/o-que-e-endereco-mac/)
+
+-IP-MAC Binding: IP-MAC binding significa vincular o endereço de controle de acesso à mídia (MAC) ao endereço de Protocolo de Internet (IP) de um dispositivo. Pense nisso como colocar um crachá em cada dispositivo que se conecta a uma rede. Portanto, se houver uma alteração no endereço MAC ou no endereço IP do dispositivo, você não conseguirá se conectar a essa rede. Com o MAC-binding, a rede de internet consegue identificar e se comunicar com o dispositivo correto, tornando a transferência de dados eficiente e fluida. (Fonte *fazer virar um exto link no paragrafo* https://www.makeuseof.com/what-is-mac-binding-how-does-it-work/)
+
+*Breve descrição sobre:*
+-Alguns desses Softwares/Soluções são:
+
+-Team Viwer
+ O TeamViewer é uma solução completa para suporte remoto, acesso remoto e reuniões online que permite atender clientes remotamente, trabalhar com colegas à distância e também ficar conectado com seus próprios dispositivos ou ajudar amigos e membros da família. Nele você pode criar um grupo e adicionar mais de um Dispositivo nele, ou conectar diretamente qualquer outro dispositivo que esteja fora do grupo, porem sem a vantagem de não pedir senha, o grupo é uma opção pratica se você deseja usar ele de em uma empresa ou em casa, porque te permite cadastrar as maquinas que desejar se estiverem todas na mesma conta do TeamViewer, podendo conectar sem necessidade da senha, podendo cadastrar 3 máquinas gratuitamente e tendo a opção do WOL porém só na versão paga. Saiba mais em (TeamViewer*https://www.teamviewer.com/pt-br/global/support/knowledge-base/teamviewer-classic/what-is-teamviewer/)
+
+*imagem TeamViewer*
+
+-Parsec
+
+ O Parsec ja é algo menos voltado para o empresárial, pois foi foi projetado fundamentalmente para jogos CO-OP Local (Cooperativos onde precisa estar na mesma Rede), mas também te permite usar de outras formas, nele você cria uma conta e adiciona a outra pessoa como amigo, ele possui umas configurações de permissões, sendo elas permitir que conecte no seu Desktop sem confirmação, e dar acesso livre a mouse e teclado, pela forma que ele foi projetado a segurança dele é um pouco baixa, então deve ter cuidado com a outra pessoa que usará com você, se está planejando usá-lo para ouras tarefas sem ser jogar com seu amigo. Mas se você vai apenas conectar seu notebook ao seu computador por exemplo o unico cuidado que você tem que ter será com as contas cadastradas, se tiver interesse em ir mais a fundo suas versões pagas são feitas para empresa e desenvolvimento tendo vários recursos para isso. Saiba mais em (Parsec*https://parsec.app/)
+-Configuração do Parsec para jogos(caso tenha enteresse*https://www.adrenaline.com.br/tutorial/parsec-o-que-e-como-funciona-e-como-usar-em-jogos/)
+
+*imagem Parsec*
+
+-Google Remote Desktop
+
+ O Remote Desktop do Google, também conhecido como Chrome Remote Desktop, é uma solução de acesso remoto desenvolvida pelo Google para permitir que os usuários controlem um computador de forma remota a partir de outro dispositivo, como um computador, tablet ou smartphone. Essa ferramenta foi projetada para ser fácil de usar e altamente acessível, tornando-a adequada tanto para uso pessoal quanto profissional. Ele possuí uma caracteristica muito útil, se o computador está na tela de bloqueio do windows por exemplo, ao conectar pelo Google Remote Desktop é possível colocar a senha para entrar na área de trabalho, então mesmo que você não goste muito dos aspectos dele, acaba sendo muito util para ser usado como um secundario onde nele você conecta só para desbloquear o computador e configurar os outros software de acesso remoto, basta você fazer a instalação da extensão dele no navegador e ter uma conta Google, e para conectar é mais simples ainda, o dispositivo que será usado para conectar só tem que entrar no link e logar com o email, sem ter que baixar nada. Saiba mais em (Google Remote Desktop*https://remotedesktop.google.com/?hl=pt-br)
+
+*imagem google*
+
+Sobre outras soluções de acesso remoto
+
+ Além desses existem vários outros, como o famoso (AnyDesk*https://anydesk.com/pt) que é bem utilizado pelas empresas possuindo uma grande compatibilidade com vários sistemas operaionais, e alguns não tão populares mas com varias funções tipo o (RustDesk*https://rustdesk.com/pt/) que possui algumas funcionalidades semelhantes ao TeamViewer e possui código aberto, tendo até algumas configurações a mais q o Team só que gratuito, todos eles inclusive os citados acima devem estar instalados em ambas as maquinas, tanto a de acesso quanto a que você quer acessar, mas não é tão difícil, existem varios videos e o próprio site deles ensinando suas respectivas formas de download e configuração.
+
+AnyDesk RustDesk
+Imagem  Imagem
+
+
+FOOTER
+
+Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL e dos Acessos Remotos, agradeço pela visita ao site.

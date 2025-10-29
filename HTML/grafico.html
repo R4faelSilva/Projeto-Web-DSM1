@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos Gerais</title>
+    <link rel="stylesheet" href="../CSS/grafico.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+    
+<body>
+
+    <header>
+        <div id="titulo">
+            <div id="tituloFlex">
+                <span id="iconeTitulo" class="material-symbols-outlined">chart_data</span>
+                <h1>Gráficos Gerais</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="chart">
+            <span class="material-symbols-outlined">bar_chart</span>
+            <h3>Frequência de Uso de Softwares/Recursos para atividades escolares</h3>
+            <canvas id="barra" height="600"></canvas>
+        </div>
+        <div class="chart">
+            <span class="material-symbols-outlined">donut_large</span>
+            <h3>Distribuição de Tempo</h3>
+            <canvas id="anel"></canvas>
+        </div>
+        
+    </div>
+
+    <div class="container2">
+        <div class="chart">
+            <span class="material-symbols-outlined">pie_chart</span>
+            <h3>Notas das Primeiras Avaliações</h3>
+            <p>Algumas vão no máximo até 7.5 e outras até 10*</p>
+            <canvas id="pie"></canvas>
+        </div>
+        <div class="chart">
+            <span class="material-symbols-outlined">show_chart</span>
+            <h3>Quantidade de dias letivos por mês</h3>
+            <canvas id="linha"></canvas>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="chart">
+            <span class="material-symbols-outlined">clock_loader_60</span>
+            <h3>Score dos Softwares de Acesso Remoto</h3>
+            <canvas id="polar"></canvas>
+        </div>
+        <div class="chart">
+            <span class="material-symbols-outlined">radar</span>
+            <h3>Características dos Softwares de Acesso Remoto e suas Pontuações</h3>
+            <canvas id="radar"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/grafico.js"></script>
+</body>
+</html>
